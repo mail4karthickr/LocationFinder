@@ -20,11 +20,11 @@ protocol LocationsListViewModelType {
 }
 
 final class LocationsListViewModel: LocationsListViewModelType {
-    let sceneCoordinator: SceneCoordinator
+    let sceneCoordinator: SceneCoordinatorType
     let provider: MoyaProvider<GoogleApiService>
     private var locationsList: [Location] = []
     
-    init(_ sceneCoordinator: SceneCoordinator, _ provider: MoyaProvider<GoogleApiService>) {
+    init(_ sceneCoordinator: SceneCoordinatorType, _ provider: MoyaProvider<GoogleApiService>) {
         self.sceneCoordinator = sceneCoordinator
         self.provider = provider
     }

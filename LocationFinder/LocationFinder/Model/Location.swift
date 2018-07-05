@@ -24,7 +24,7 @@ final public class Result: JSONAbleType {
     
     static func fromJSON(_ json: [String: Any]) throws -> Result {
         let json = JSON(json)
-        guard let dict = json.dictionary, let status = dict["status"]?.string, status == "OK" else {
+        guard let dict = json.dictionary, let status = dict["status"]?.string, status == "OK" || status == "ZERO_RESULTS" else {
              throw ApiError.requestFailed
         }
         guard let results = json["results"].array else {

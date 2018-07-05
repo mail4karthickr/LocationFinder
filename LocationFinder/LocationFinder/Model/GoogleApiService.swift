@@ -24,7 +24,7 @@ extension GoogleApiService: TargetType {
     var sampleData: Data {
         switch self {
         case .locationsList(_):
-            return stubbedResponse("Locations")
+            return stubbedResponse("MultipleLocationResponse")
         }
     }
     

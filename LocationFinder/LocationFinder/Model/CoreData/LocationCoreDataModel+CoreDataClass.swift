@@ -10,8 +10,14 @@
 import Foundation
 import CoreData
 
+protocol LocationCoreDataModelType {
+    func insert(_ location: Location)
+    func exists(_ location: Location) -> Bool
+    func delete(_ location: Location)
+}
+
 @objc(LocationCoreDataModel)
-public class LocationCoreDataModel: NSManagedObject {
+public class LocationCoreDataModel: NSManagedObject, LocationCoreDataModelType {
     let context = CoreDataStack.sharedInstance.persistentContainer.viewContext
     
     func insert(_ location: Location) {

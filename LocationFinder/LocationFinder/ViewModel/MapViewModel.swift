@@ -13,13 +13,13 @@ import Action
 import MapKit
 
 final class MapViewModel {
-    private let sceneCoordinator: SceneCoordinator // coordinator used to tarnsition between the view controllers.
+    private let sceneCoordinator: SceneCoordinatorType // coordinator used to tarnsition between the view controllers.
     private let locations: [Location]
-    private let locationCoreDataModel: LocationCoreDataModel
+    private let locationCoreDataModel: LocationCoreDataModelType
     private let selectedItem: Location?
-    private var buttonTitleVariable = Variable<String>("Save") // Variable used to change the save or delete button title based on the user's action.
+    private var buttonTitleVariable = Variable<String>("") // Variable used to change the save or delete button title based on the user's action.
 
-    init(sceneCoordinator: SceneCoordinator, locations: [Location], locationCoreDataModel: LocationCoreDataModel, selectedItem: Location? = nil) {
+    init(sceneCoordinator: SceneCoordinatorType, locations: [Location], locationCoreDataModel: LocationCoreDataModelType, selectedItem: Location? = nil) {
         self.sceneCoordinator = sceneCoordinator
         self.locations = locations
         self.selectedItem = selectedItem
