@@ -33,6 +33,12 @@
 		7767699720EDDB32009D4108 /* SingleLocationResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 7767699620EDDB32009D4108 /* SingleLocationResponse.json */; };
 		7767699B20EDE5B9009D4108 /* EmptyResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 7767699A20EDE5B9009D4108 /* EmptyResponse.json */; };
 		7767699D20EDE995009D4108 /* MapViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7767699C20EDE995009D4108 /* MapViewModelTests.swift */; };
+		7767699F20EDF481009D4108 /* ResultModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7767699E20EDF481009D4108 /* ResultModelTests.swift */; };
+		776769A320EDF813009D4108 /* InvalidResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 776769A220EDF813009D4108 /* InvalidResponse.json */; };
+		776769A520EDF978009D4108 /* InvalidStatusResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 776769A420EDF978009D4108 /* InvalidStatusResponse.json */; };
+		776769A720EDFA25009D4108 /* LocationModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776769A620EDFA25009D4108 /* LocationModelTests.swift */; };
+		776769AB20EDFA70009D4108 /* LocationResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 776769AA20EDFA70009D4108 /* LocationResponse.json */; };
+		776769AD20EDFBF8009D4108 /* InvalidLocationResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 776769AC20EDFBF8009D4108 /* InvalidLocationResponse.json */; };
 		7786301320EB423F008953EE /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7786301220EB423F008953EE /* MessageView.swift */; };
 		778FABC720E95667006BBF3F /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778FABC620E95667006BBF3F /* MapViewModel.swift */; };
 		778FABC920E95689006BBF3F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778FABC820E95689006BBF3F /* MapViewController.swift */; };
@@ -86,6 +92,12 @@
 		7767699620EDDB32009D4108 /* SingleLocationResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SingleLocationResponse.json; sourceTree = "<group>"; };
 		7767699A20EDE5B9009D4108 /* EmptyResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EmptyResponse.json; sourceTree = "<group>"; };
 		7767699C20EDE995009D4108 /* MapViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModelTests.swift; sourceTree = "<group>"; };
+		7767699E20EDF481009D4108 /* ResultModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultModelTests.swift; sourceTree = "<group>"; };
+		776769A220EDF813009D4108 /* InvalidResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = InvalidResponse.json; sourceTree = "<group>"; };
+		776769A420EDF978009D4108 /* InvalidStatusResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = InvalidStatusResponse.json; sourceTree = "<group>"; };
+		776769A620EDFA25009D4108 /* LocationModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModelTests.swift; sourceTree = "<group>"; };
+		776769AA20EDFA70009D4108 /* LocationResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LocationResponse.json; sourceTree = "<group>"; };
+		776769AC20EDFBF8009D4108 /* InvalidLocationResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = InvalidLocationResponse.json; sourceTree = "<group>"; };
 		7786301220EB423F008953EE /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		778FABC620E95667006BBF3F /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		778FABC820E95689006BBF3F /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -152,6 +164,10 @@
 				7705E78920E74E940045886F /* MultipleLocationResponse.json */,
 				7767699620EDDB32009D4108 /* SingleLocationResponse.json */,
 				7767699A20EDE5B9009D4108 /* EmptyResponse.json */,
+				776769A220EDF813009D4108 /* InvalidResponse.json */,
+				776769A420EDF978009D4108 /* InvalidStatusResponse.json */,
+				776769AA20EDFA70009D4108 /* LocationResponse.json */,
+				776769AC20EDFBF8009D4108 /* InvalidLocationResponse.json */,
 			);
 			path = StubbedResponse;
 			sourceTree = "<group>";
@@ -180,6 +196,8 @@
 			children = (
 				772D7EBA20EDBD7B002C40E1 /* LocationsListViewModelTests.swift */,
 				7767699C20EDE995009D4108 /* MapViewModelTests.swift */,
+				7767699E20EDF481009D4108 /* ResultModelTests.swift */,
+				776769A620EDFA25009D4108 /* LocationModelTests.swift */,
 			);
 			path = ViewModelTests;
 			sourceTree = "<group>";
@@ -364,9 +382,13 @@
 				7767699B20EDE5B9009D4108 /* EmptyResponse.json in Resources */,
 				774C65C520E5E59D00DA4CF9 /* LaunchScreen.storyboard in Resources */,
 				774C65C220E5E59D00DA4CF9 /* Assets.xcassets in Resources */,
+				776769AB20EDFA70009D4108 /* LocationResponse.json in Resources */,
 				7705E78A20E74E940045886F /* MultipleLocationResponse.json in Resources */,
+				776769AD20EDFBF8009D4108 /* InvalidLocationResponse.json in Resources */,
 				774C65C020E5E59D00DA4CF9 /* Main.storyboard in Resources */,
+				776769A320EDF813009D4108 /* InvalidResponse.json in Resources */,
 				7767699720EDDB32009D4108 /* SingleLocationResponse.json in Resources */,
+				776769A520EDF978009D4108 /* InvalidStatusResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,8 +565,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7767699F20EDF481009D4108 /* ResultModelTests.swift in Sources */,
 				774C65D020E5E59D00DA4CF9 /* LocationFinderTests.swift in Sources */,
 				7767699D20EDE995009D4108 /* MapViewModelTests.swift in Sources */,
+				776769A720EDFA25009D4108 /* LocationModelTests.swift in Sources */,
 				772D7EBB20EDBD7B002C40E1 /* LocationsListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
