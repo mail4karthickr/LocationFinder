@@ -30,5 +30,27 @@ class LocationModelTests: XCTestCase {
             XCTAssertEqual(error as! ApiError, ApiError.jsonParsingError)
         }
     }
+    
+    func testAnnotationTitle() {
+        let response = stubbedResponse("LocationResponse")
+        let location = try! Location.fromJSON(JSON(response!).dictionaryObject!)
+        
+        XCTAssertEqual(location.title!, "233 S Wacker Dr # 3500, Chicago, IL 60606, USA")
+    }
+    
+    func testAnnotationSubTitle() {
+        let response = stubbedResponse("LocationResponse")
+        let location = try! Location.fromJSON(JSON(response!).dictionaryObject!)
+
+        XCTAssertEqual(location.subtitle!, "(41.87888 -87.63588)")
+    }
+    
+    func testAnnotationCoordinate() {
+        let response = stubbedResponse("LocationResponse")
+        let location = try! Location.fromJSON(JSON(response!).dictionaryObject!)
+        
+        XCTAssertEqual(location.coordinate.latitude, 41.878885)
+        XCTAssertEqual(location.coordinate.longitude, -87.63587799999999)
+    }
 }
 

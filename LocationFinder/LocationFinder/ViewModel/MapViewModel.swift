@@ -33,7 +33,7 @@ final class MapViewModel {
     var selectedLocation: Observable<Location?> {
         return .just(selectedItem)
     }
-    
+
     func saveSelectedLocation() {
         if let selectedItem = selectedItem {
             locationCoreDataModel.insert(selectedItem) // don't force unwrap find a better way

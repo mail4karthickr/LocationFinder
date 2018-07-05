@@ -39,7 +39,7 @@ final public class Result: JSONAbleType {
 
 final public class Location: NSObject {
     let address: String
-    let locationCoordinate: CLLocationCoordinate2D
+    var locationCoordinate: CLLocationCoordinate2D
     
     init(address: String, locationCoordinate: CLLocationCoordinate2D) {
         self.address = address
@@ -69,7 +69,9 @@ extension Location: MKAnnotation {
     }
     
     public var subtitle: String? {
-        return "\((locationCoordinate.latitude, locationCoordinate.longitude))"
+        let latitude = String(format: "%.5f", locationCoordinate.latitude)
+        let longitude = String(format: "%.5f", locationCoordinate.longitude)
+        let coordinate = String(format: "(%@ %@)", latitude, longitude)
+        return coordinate
     }
 }
-

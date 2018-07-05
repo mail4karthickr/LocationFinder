@@ -23,11 +23,13 @@ final class MapViewController: UIViewController, BindableType {
         
         // All the routing needs to happen from our coordinator, so hiding the back button and creating our own back button to route the pop action through our coordinator.
         self.navigationItem.hidesBackButton = true
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .done, target: self, action: nil)
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "< back", style: .plain, target: self, action: nil)
+       
         self.navigationItem.leftBarButtonItem?.rx.action = viewModel.backButtonAction
         
         // save or delete bar button.
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .plain, target: self, action: #selector(saveOrDeleteAction(sender:)))
+        self.navigationItem.title = "All Results"
     }
     
     @objc func saveOrDeleteAction(sender: UIBarButtonItem) {
@@ -58,7 +60,7 @@ final class MapViewController: UIViewController, BindableType {
             .subscribe(onNext: { [unowned self] location in
                 if let location = location {
                     self.mapView.selectAnnotation(location, animated: false)
-                    let span = MKCoordinateSpan(latitudeDelta: 1, longitudeDelta: 1)
+                    let span = MKCoordinateSpan(latitudeDelta: 45, longitudeDelta: 45)
                     let region = MKCoordinateRegion(center: location.coordinate, span: span)
                     self.mapView.setRegion(region, animated: false)
                 }
