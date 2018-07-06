@@ -19,8 +19,7 @@ This app uses MVVM + Coordinator pattern and RxSwift for functional reactive pro
 
 ###### List of third party libraries used
 1. RxSwift (https://github.com/ReactiveX/RxSwift) - Used to acheieve functional reactive programming.
-2. RxCocoa (https://github.com/ReactiveX/RxSwift/tree/master/RxCocoa)
-  * Used to acheieve functional reactive programming.
+2. RxCocoa (https://github.com/ReactiveX/RxSwift/tree/master/RxCocoa) - Used to acheieve functional reactive programming.
 3. RxDataSource (https://github.com/RxSwiftCommunity/RxDataSources)
   - Used to show reactive tableview with multiple sections.
 4. RxMapView (https://github.com/RxSwiftCommunity/RxMKMapView)
