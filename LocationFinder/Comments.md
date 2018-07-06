@@ -8,6 +8,8 @@ This app uses MVVM + Coordinator pattern and RxSwift for functional reactive pro
 
 ###### Architecture Diagram
 ![Architecture](Arch.png)
+
+
 1. Viewcontroller is bindable type, so all the UI elements in the viewcontroller are binded with the viewmodel.
 2. Viewcontroller listens for the changes that occur in the viewmodel.
 3. Viewmodel talks with the model and updates the viewcontroller through Observable.
@@ -16,10 +18,9 @@ This app uses MVVM + Coordinator pattern and RxSwift for functional reactive pro
 6. Transition between different scene (viewcontroller + viewmodel) happens through scene coordinator.
 
 ###### List of third party libraries used
-1. RxSwift (https://github.com/ReactiveX/RxSwift)
-    * Used to acheieve functional reactive programming.
+1. RxSwift (https://github.com/ReactiveX/RxSwift) - Used to acheieve functional reactive programming.
 2. RxCocoa (https://github.com/ReactiveX/RxSwift/tree/master/RxCocoa)
-  - Used to acheieve functional reactive programming.
+  * Used to acheieve functional reactive programming.
 3. RxDataSource (https://github.com/RxSwiftCommunity/RxDataSources)
   - Used to show reactive tableview with multiple sections.
 4. RxMapView (https://github.com/RxSwiftCommunity/RxMKMapView)
