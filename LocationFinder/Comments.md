@@ -33,10 +33,13 @@ This app uses MVVM + Coordinator pattern and RxSwift for functional reactive pro
 
 ###### Things that can be improved
 1. I would like to organize the unit test code. I havent checked for any code duplication for unit tests.
+
 2. I would like to add activity indicator while location search is being peformed.
+
 3. Error handling can be improved. Now the code will show "No Results" message for all the errors, it is better to show a specific error message. For e.g when there is no network connection, instead of showing "No Results" message i like to show "No Internet connection" message.
+
 4. UI testing and perfomance testing can be done.
-5. For the custom back button that i am using in the MapViewController dose not have back button icon, it has just "back" text. I need to set a back button image. 
+5. For the custom back button that i am using in the MapViewController dose not have back button icon, it has just "back" text. I need to set a back button image.
 
 ###### Things not delivered
 1. Core data model is not unit tested due to lack of time.
