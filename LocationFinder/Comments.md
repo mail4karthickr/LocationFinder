@@ -27,7 +27,7 @@ This app uses MVVM + Coordinator pattern and RxSwift for functional reactive pro
 5. Moya (https://github.com/Moya/Moya)
  - Network abstration layer.
 6. SwiftyJson (https://github.com/SwiftyJSON/SwiftyJSON)
- - For wasy json parsing
+ - For easy json parsing
 7. RxBlocking (https://github.com/ReactiveX/RxSwift/tree/master/RxBlocking)
   - For unit testing async code.
 
