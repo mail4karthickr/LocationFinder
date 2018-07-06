@@ -75,7 +75,7 @@ final class LocationsListViewController: UIViewController, BindableType {
         
         // Observer for text change in the search bar and start searching as user types.
         let searchTextObservable = searchBar
-            .rx.text  // observable property, gets text from search bar.
+            .rx.text
             .orEmpty  // make it non optional.
             .debounce(0.5, scheduler: MainScheduler.instance) // wait for 0.5 seconds for changes.
             .distinctUntilChanged() // check if the new value is the same as old, if it's same don't pass though.
@@ -84,9 +84,9 @@ final class LocationsListViewController: UIViewController, BindableType {
                 self.viewModel.getLocations(searchText: $0) // Get the locations.
                     .asDriver(onErrorJustReturn: []) // Make sure the observable dose not error out and the subscriber for the resposne will be called on main thread.
             }
-            .share() // Shares a single subscription to the underlying sequence.
+            .share()
             .asDriver(onErrorJustReturn: []) // When there is any error just return an emty array.
-        
+
         // Show "No Results" message when result is empty
         searchTextObservable
             .filter { $0.isEmpty }

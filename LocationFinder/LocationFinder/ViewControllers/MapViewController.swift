@@ -23,7 +23,7 @@ final class MapViewController: UIViewController, BindableType {
         
         // All the routing needs to happen from our coordinator, so hiding the back button and creating our own back button to route the pop action through our coordinator.
         self.navigationItem.hidesBackButton = true
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "< back", style: .plain, target: self, action: nil)
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "back", style: .plain, target: self, action: nil)
        
         self.navigationItem.leftBarButtonItem?.rx.action = viewModel.backButtonAction
         
