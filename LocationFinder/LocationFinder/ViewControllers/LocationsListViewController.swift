@@ -25,10 +25,13 @@ final class LocationsListViewController: UIViewController, BindableType {
         
         // Add fotterview to hide empty rows
         locationsListView.tableFooterView = UIView(frame: .zero)
+        locationsListView.accessibilityLabel = AccessibilityConstants.LocationsList.locationsTableView.rawValue
+        searchBar.accessibilityLabel = AccessibilityConstants.LocationsList.locationsSearchField.rawValue
         
         // set parent view to show "No Results" message view
         messageView.useContainerView(view: locationsListView)
         messageView.showMessageView(with: "No Results")
+        messageView.accessibilityLabel = AccessibilityConstants.Common.messageView.rawValue
     }
 
     override func viewWillAppear(_ animated: Bool) {

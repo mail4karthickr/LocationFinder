@@ -21,6 +21,8 @@ target 'LocationFinder' do
     # Pods for testing
     pod 'RxBlocking', '~> 4.0'
     pod 'RxTest',     '~> 4.0'
+    pod 'KIF'
+    pod 'Nimble'
   end
 
 end

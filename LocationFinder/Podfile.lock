@@ -4,6 +4,9 @@ PODS:
     - RxSwift (~> 4.0)
   - Alamofire (4.6.0)
   - Differentiator (3.0.2)
+  - KIF (3.7.1):
+    - KIF/Core (= 3.7.1)
+  - KIF/Core (3.7.1)
   - ModelMapper (7.4.1)
   - Moya (11.0.1):
     - Moya/Core (= 11.0.1)
@@ -22,6 +25,7 @@ PODS:
   - Moya/RxSwift (11.0.1):
     - Moya/Core
     - RxSwift (~> 4.0)
+  - Nimble (7.0.3)
   - Result (3.2.4)
   - RxBlocking (4.1.2):
     - RxSwift (~> 4.0)
@@ -41,10 +45,12 @@ PODS:
 
 DEPENDENCIES:
   - Action
+  - KIF
   - Moya
   - Moya-ModelMapper
   - Moya-ModelMapper/RxSwift
   - Moya/RxSwift
+  - Nimble
   - RxBlocking (~> 4.0)
   - RxCocoa (~> 4.0)
   - RxDataSources (~> 3.0)
@@ -57,9 +63,11 @@ SPEC CHECKSUMS:
   Action: d60087ebce41b969d1afdad01e2fa1372a82f26e
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
   Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
+  KIF: af73f6a04539bd205622c2e5ce5f910cc2123d4b
   ModelMapper: e576b4e32007bf574d0f9e4f533d29c46d29f146
   Moya: 3d594ada51a21cc02b18739ab578a1984f900c8a
   Moya-ModelMapper: 9aa8a99cb664a083b376869d6091c1f20d9f171e
+  Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
   RxBlocking: f6054985901412fc8c02daa84e92d4ba68c61389
   RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
@@ -69,6 +77,6 @@ SPEC CHECKSUMS:
   RxTest: e634f15fd2c2cd0e0120132ef7a4f7be69ad0393
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: 75745302e52c11cccfaf652e3d2316febfba9d74
+PODFILE CHECKSUM: 38764e7ffd8547c5e9d1b71482a9dc377affb6f4
 
 COCOAPODS: 1.3.1

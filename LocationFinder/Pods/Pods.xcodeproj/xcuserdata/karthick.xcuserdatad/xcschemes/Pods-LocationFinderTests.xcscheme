@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F5D04BB9EAB95593104555366C7A7978"
+               BlueprintIdentifier = "34102EE5803C886C48358EE39AD92537"
                BuildableName = "Pods_LocationFinderTests.framework"
                BlueprintName = "Pods-LocationFinderTests"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -26,7 +26,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -37,7 +36,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -47,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F5D04BB9EAB95593104555366C7A7978"
+            BlueprintIdentifier = "34102EE5803C886C48358EE39AD92537"
             BuildableName = "Pods_LocationFinderTests.framework"
             BlueprintName = "Pods-LocationFinderTests"
             ReferencedContainer = "container:Pods.xcodeproj">

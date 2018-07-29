@@ -19,5 +19,85 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LocationFinderTests/UITesting/Features/LocationsListTests.swift"
+            timestampString = "554098593.596711"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "enterSearchTextWhichHasMultipleCitiesWithSameName()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LocationFinderTests/UITesting/Features/LocationsListTests.swift"
+            timestampString = "554098593.597188"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "expectToSeeLocationsListViewWith(numberOfSections:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LocationFinderTests/UITesting/Steps/CommonSteps.swift"
+            timestampString = "554098593.597508"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "expectToSeeTableViewWith(numberOfSections:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LocationFinderTests.BaseUITests.expectToSeeTableViewWith(numberOfSections: Swift.Int) -&gt; ()"
+                  moduleName = "LocationFinderTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/karthick/Documents/CloneTest/ios-challenge/LocationFinder/LocationFinderTests/UITesting/Steps/CommonSteps.swift"
+                  timestampString = "554098594.363022"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "534">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #1 : @autoclosure () throws -&gt; Swift.Optional&lt;Swift.Int&gt; in LocationFinderTests.BaseUITests.expectToSeeTableViewWith(numberOfSections: Swift.Int) -&gt; ()"
+                  moduleName = "LocationFinderTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/karthick/Documents/CloneTest/ios-challenge/LocationFinder/LocationFinderTests/UITesting/Steps/CommonSteps.swift"
+                  timestampString = "554098594.366671"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
